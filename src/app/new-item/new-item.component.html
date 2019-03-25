@@ -1,9 +1,9 @@
 <body>
 <button class="btn btn-light" (click)="this.goBack()">Back</button>
-<h2>Insert new series/movie</h2>
+<h2>Add Food Details</h2>
 
 <div>
-<p>Title:</p>
+<p>Food Name:</p>
     <input #title class="title">
 </div>
 <div>
@@ -11,11 +11,11 @@
     <textarea #description class="description"></textarea>
 </div>
 <div>
-<p>Score:</p>
-    <input size=2 min=0 max=10 #score type="number" class="score">
+<p>Quantity:</p>
+    <input size=2 min=0 max=100 #score type="number" class="score">
 </div>
 <div>
-<p>Genre:</p>
+<p>Price in Rupees</p>
   <input #genre class="genre">
 </div>
 <div>
@@ -24,5 +24,5 @@
 </div>
 
 <br>
-<button (click)="saveItem(title.value, description.value, score.value, genre.value)">Save</button>
+<button (click)="saveItem(title.value, description.value, score.value, genre.value)">Submit</button>
 </body>
